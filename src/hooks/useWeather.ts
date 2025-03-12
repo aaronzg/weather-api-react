@@ -69,7 +69,6 @@ const useWeather = () => {
             const data = await axios(geoURL);
             
             if(!data.data[0]) {
-                console.log('Ciudad nose')
                 setNotFound(true)
                 return
             }
